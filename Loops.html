@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loops</title>
+</head>
+<body>
+	<ul id="demo"></ul><br>
+	<ul id="demo1"></ul><br>
+	<ul id="demo2"></ul><br>
+	<ul id="demo3"></ul></br>
+	<ul id="demo4"></ul><br>
+	<ul id="demo5"></ul>
+
+
+	<script type="text/javascript">
+	//break
+		var html=""
+		for (var i = 0; i < 10; i++) {
+			if (i == 5) {
+				break;
+			}
+			html += "<li>Number" +i+ "</li>"
+		}
+		document.getElementById('demo').innerHTML=html;
+		//continue
+		var html=""
+		for (var i = 0; i < 10; i++) {
+			if (i==10) {
+				continue;
+			}
+			html +="<li>Number"+i+"</li>"
+			}
+			document.getElementById('demo1').innerHTML= html;
+			
+			//for loop
+			var cities=['Lagos','Abuja','Ogun']
+			var html="";
+			for (var i = 0; i < cities.length; i++) {
+			html+="<li>"+ cities[i]+"</li>";		
+			}
+			document.getElementById("demo2").innerHTML=html;
+		var text="Datson"
+		for ( value of text) {
+			document.getElementById("demo3").innerHTML=text;
+		}
+		//while loop
+		var cities=['Lagos','Abuja','Ogun']
+		var len= cities.length;
+		var i=0;
+		var html="";
+		while (i<len) {
+			html+="<p> I like "+cities[i]+" .</p>"
+			i++
+		}
+		document.getElementById("demo4").innerHTML=html;
+		//js for of
+		var cities= ['Mubai','Abuja','Manila']
+		var len = cities.length;
+		var i = 0;
+		var html=""
+		while (i< len) {
+			html+="<p> I wish to go to "+cities[i]+" .</p>";
+			i++
+		}
+		document.getElementById("demo5").innerHTML= html;
+		
+	</script>
+</body>
+</html>

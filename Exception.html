@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exception</title>
+</head>
+<body><form>
+	<label>Age:</label><input type="number" name="number" id="number"><button type="button"id="submit">Submit</button>
+	</form>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		//reference error
+		try{
+			myFunction()
+		}
+		catch(err){
+			console.log(err)
+		}
+		try{
+			throw "An error occured please fixed it"
+		}
+		catch(err){
+			console.log(err)
+		}
+		//illustrative ecample of exception in js
+		var submit =document.getElementById('submit');
+		submit.onclick = function(){
+			var age = parseInt(document.getElementById("number").value)
+			try{
+				if(age<18){
+					throw "user must be 18 or above to enter"
+				}
+				else{
+					document.getElementById("demo").innerHTML = "user is above 18"
+				}
+			}
+			catch(err){
+				document.getElementById("demo").innerHTML = err;
+			}
+		}
+		//range Error
+		var number = 21.555
+		try{
+			number.toExponenetial(-2)
+		}
+		catch(err){
+			console.log(err.name)
+			console.log(err.message)
+		}
+		//reference error
+		var num1 = 21.5555
+		try{
+			var total = num1 +num2
+		}
+		catch(err){
+			console.log(err.name)
+			console.log(err.message)
+		}
+		//syntax errror
+		try{
+			eval("document.write('hello world)")
+		}
+		catch(err){
+			console.log(err.name)
+			console.log(err.message)
+		}
+		var text ="hello world"
+		try{
+			var x =text.toFixed(2);
+		}
+		catch(err){
+			console.log(err.name)
+			console.log(err.message )
+		}
+	</script>
+</body>
+</html>

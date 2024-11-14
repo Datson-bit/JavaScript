@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess game</title>
+</head>
+<body>
+	<form>
+		<p>Guess a number from 1-10</p>
+		<input type="number" id="num"><br><button id="submit">Submit</button>
+	</form>
+	<h3 id="demo"></h3>
+	<script type="text/javascript">
+		var secreetnum=9;
+		var Guesslimit = 3;
+		var count = 0
+		var submit = document.getElementById("submit");
+	submit.onclick = function(){while(count<Guesslimit){
+
+			var elem=parseInt(document.getElementById("num").value);
+			if(elem==secreetnum){
+				document.getElementById("demo").innerHtML="Good Job, you won"
+				count++
+			}
+		}
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo{
+            height: 400px;
+            width: 500px;
+            border: none;
+            background-color: darkblue;
+            opacity: 1;
+            display: block;
+            transition: all 1s;
+        }
+        </style>
+</head>
+<body>
+    <div id="demo">
+
+   </div><br/>
+   <button onclick="fadeOut()">Fade out</button> <button onclick="fadeIn()">Fade in</button>
+    <script>
+        function fadeOut(){
+            var element = document.getElementById("demo");
+            element.style.opacity=0;
+            setTimeout(function(){
+                element.style.display ="none";
+                
+            },1000)
+        }
+        
+        function fadeIn(){
+            var element = document.getElementById("demo");
+            element.style.display="block";
+            setTimeout(function(){
+                element.style.opacity =1;
+                
+            },1000)
+        }
+    </script>
+</body>
+</html>

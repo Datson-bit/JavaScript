@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+ <head>
+<title> js</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+<script src="app.js"></script>
+</head>
+<body id="bd">
+<button type ="button" onclick="myFunc()"> Show dialog box</button>
+<div id="div1"></div>
+<button type ="button" onclick="show()"> Show </button>
+<button type ="button" onclick="hide()"> hide</button>
+<h2 id="he1">JEHOVAH IS MY REFUGE</h2>
+<select id="fruits" onchange="checkPrice()">
+	<option value="mango" id="mango"> mango</option>
+	<option value="apple" id="mango">apple</option>
+	<option value="pear" id="mango">pear</option>
+</select>
+<p id="demo"></p>
+<p id="p2"></p>
+      <form>
+         <label for="name">Name: </label><input type="text" name="name" id="in1" required><br>
+            <label for="name">Password: </label><input type="Password" name="Password" id="in2" required><br>
+               <label for="name">Email: </label><input type="Email" name="Email" id="in3" required><br>
+               <input type="submit" name="submit">
+             </form>
+             <br>
+             <br>
+              <div class="main">
+                <form name="myform">
+                  <input type="text" name="textview" class="textview" disabled ><br><br>
+                </form>
+                <table>
+                  <tr>
+                    <td><input type="button" class="button number" onclick="myform.textview.value+='0'" value="0"></td>
+                     <td><input type="button" class="button number"onclick="myform.textview.value+='1'" value="1"></td>
+                      <td><input type="button" class="button number"onclick="myform.textview.value+='2'" value="2"></td>
+                       <td><input type="button" class="button number"onclick="myform.textview.value+='3'" value="3"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="button" class="button number"onclick="myform.textview.value+='4'" value="4"></td>
+                     <td><input type="button" class="button number" onclick="myform.textview.value+='5'" value="5"></td>
+                      <td><input type="button" class="button number"onclick="myform.textview.value+='6'" value="6"></td>
+                       <td><input type="button" class="button number" onclick="myform.textview.value+='7'" value="7"></td>
+                  </tr>
+                  <tr>
+                     <td><input type="button" class="button number"onclick="myform.textview.value+='8'" value="8"></td>
+                     <td><input type="button" class="button number" onclick="myform.textview.value+='9'" value="9"></td>
+                      <td><input type="button" class="button number"onclick="myform.textview.value+='+'" value="+"></td>
+                       <td><input type="button" class="button number" onclick="myform.textview.value+='-'" value="-"></td>
+                  </tr>
+                  <tr>
+                     <td><input type="button" class="button number"onclick="myform.textview.value+='*'" value="*"></td>
+                     <td><input type="button" class="button number" onclick="myform.textview.value+='/'" value="/"></td>
+                      <td><input type="button" class="button number"onclick="myform.textview.value =''" value="C"></td>
+                       <td><input type="button" class="button number" onclick="myform.textview.value=eval(myform.textview.value)" value="="></td>
+                  </tr>
+                </table>
+				
+              </div>
+			<input type="file" id="file" onchange="readFile()">
+      <img src="" alt="the image will be shown here" id="result"style="height: 100px; width: 100px;">
+			<input type="date"><br>
+			<input type="time"><br>
+			<input type="datetime-local"><br>
+      <input type="color" id="color" onchange="getValue()"><br>
+      <h2 id="color1"></h2>
+
+<div class="container">
+    <div id="div5" onclick="colorChange(this)"></div><br>
+    <button id="btn-6" onclick="fadeOut()">Fade out</button>
+    <button id="btn-6"onclick="fadeIn()">Fade in</button>
+    </div><br><br>
+     <ul id="list">
+       <li>HTML</li>
+       <li>CSS</li>
+       <li>JAVASCRIPT</li>
+       <li>JAVA</li>
+     </ul>
+     <button onclick="slideUp()">slide down</button>
+    <button onclick="slideDown()">slide up</button><br><br><br>
+    <div id="change" onclick="changeColor(this)">
+              <p>Tap me to change color</p>
+    </div><br><br>
+    <h1 id="time">10</h1>
+      <br><br>
+
+      <p id="demo1" style="color:black"></p>
+</body>
+</html>

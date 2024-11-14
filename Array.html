@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">
+    </p>
+    <script>
+        var cities = ['Madrid','Berlin','Tokyo']
+        cities.push("Rio","Denver","Moscow")
+        cities.unshift("Rio")
+        cities.pop()
+        var html="";
+        for (var i =0; i < cities.length; i++) {
+        html+="<p>I want to go to "+cities[i]+"<br>";"</p>"     
+        }
+        document.getElementById("demo").innerHTML= html
+        </script>
+</body>
+</html>

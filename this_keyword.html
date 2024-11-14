@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        var fruits ={
+            name:"mango",
+            color:"yellow",
+            isSweet:"true",
+            showFruit: function(){
+                document.getElementById("demo").innerHTML =
+                "The "+this.name +" is "+this.color
+            }
+        };
+        fruits.showFruit();
+    </script>
+</body>
+</html>

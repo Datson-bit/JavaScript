@@ -1,0 +1,90 @@
+#div1{
+	height: 100px;
+	width:100px;
+	padding: 10px 20px;
+	background-color: red;
+	border: 1px solid blue;
+  }
+  #fruits{
+  	background-color:blue;
+  	width: 300px;
+  	padding: 10px;
+  	color: white;
+    border-radius: 5px;
+    border:none;
+  	font-size: 100%;
+  }
+  #mango{
+    background-color:black; 
+  }
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .button{
+    width: 75px;
+    padding: 10px;
+    height: 50px;
+    margin: 2px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+  }
+  .textview{
+    width: 300px;
+    height: 35px;
+    padding: 5px;
+    font-size: 25px;
+    background-color: grey;
+    color: white;
+    border-radius: 2px;
+    border:none; 
+  }
+  .main{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    background-color: black;
+    top: 50%;
+    left:50%;
+    transform: translateX(-50%)translateY(-50%);
+  }
+  #div5{
+      width:300px;
+      height:200px;
+      border:none;
+      border-radius:30%;
+      background-color: red;
+      opacity: 1;
+      transition: 3s;
+      display: block;
+  }
+   #btn-6{
+      height: 30px;
+      width: 70px;
+      color: white;
+      background-color:red;
+      padding: px;
+      border: none;
+      border-radius: 5%;
+  }
+  #list{
+    max-height:100px;
+    overflow-y: hidden;
+    transition: 1s;
+  }
+  #change{
+    height: 70px;
+    width: 400px;
+    color: white;
+    background-color:red;
+    border: none;
+    opacity: 1;
+    transition: 3s;
+    border-radius: 5px;
+    text-align: center; 
+  }
+  #time{
+    overflow-y: hidden;
+  }

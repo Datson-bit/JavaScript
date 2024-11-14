@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #shape{
+            height: 100px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            background-color: Red;
+        }
+        #btn{
+            height: 30px;
+            width: 70px;
+            border: none;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+        }
+        </style>
+</head>
+<body>
+    <h1>My color changer input any color in the textfield and see the magic</h1>
+    <div id="shape">
+        <p id="demo" style="color: white; text-align: center;"></p>
+        </div><br>
+        <p>Inut a color from this range ('red','blue','yellow','green')</p>
+        <input type="text"id="txt">
+        <button id="btn">Click</button>
+<ul id="loop"></ul>
+        <script>
+          var btn= document.getElementById("btn");
+          btn.onclick=	function(){
+          		var element = document.getElementById('shape');
+          		var input = document.getElementById('txt').value;
+
+          		if (input =='blue'.toLowerCase()){
+          			element.style.background = "blue"
+          		}
+          		else if (input == 'red'.toLowerCase()) {
+          			element.style.background = "red";
+          		}
+          		if (input == 'yellow'.toLowerCase()) {
+          			element.style.backgroundColor = "yellow"
+          		}
+          		else if(input =='green'.toLowerCase()){
+          			element.style.backgroundColor = "green"
+          		}
+             
+          	}
+            
+            var num = [1,2,3,4,5,]
+            var html ="";
+            for (var i = 0; i < num.length; i++) {
+              html += '<h1>'+num[i]+'</h1>'
+
+            }
+            document.getElementById('loop').innerHTML= html
+            console.log(num)
+          	var name = "Datson";
+          	var tcase = name.toUpperCase()
+          	console.log(tcase)
+            </script>
+</body>
+</html>

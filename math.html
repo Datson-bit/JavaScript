@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button onclick="getRandomInt()">Click</button>
+    <h1>Check the console</h1>
+    <script>
+        //The ceil() method rounds up a number to the nearest whole number
+        var num1 = Math.ceil(21.765);
+        console.log(num1);
+        // it almost serves the sam e purpose as ceil method
+        var num2 = Math.floor(23.567);
+        console.log(num2)
+        // the sqrt()method
+        var num3 = Math.sqrt(49);
+        console.log(num3)
+        // cbrt method
+        var num4 = Math.cbrt(18);
+        console.log(num4)
+        // max method
+        var num5 = Math.max(1,2,3,5,6,9);
+        console.log(num5)
+        // min method
+        var num6 = Math.min(-23,-2,-2,-1);
+        console.log(num6)
+        // Math Random
+        function getRandomInt(){
+            var ans =Math.floor(Math.random()*100);
+            document.getElementById("demo").innerHTML=ans;
+        }
+        </script>
+</body>
+</html>

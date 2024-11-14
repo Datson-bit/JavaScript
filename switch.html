@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <label> Choose a fruit
+        <select id="fruits" onchange="checkPrice()">
+            <option value="apple">apple</option>
+            <option value="mango">mango</option>
+            <option value="cherry">cherry</option>
+        </select>
+        <p id="price"></p>
+    </label>
+    <script>
+        function checkPrice(){
+            var fruit= document.getElementById("fruits").value
+        switch(fruit){
+            case 'apple':
+            var amount ="$1.92"
+            document.getElementById("price").innerHTML="The price of "+fruit+ " is "+amount;
+            break;
+            case 'mango':
+            var amount ="$2.92"
+            document.getElementById("price").innerHTML="The price of "+fruit+ " is "+amount;
+            break;
+            case 'cherry':
+            var amount ="$3.92"
+            document.getElementById("price").innerHTML="The price of "+fruit+ " is "+amount;
+            break;
+        }
+        }
+      
+        </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>check the console</p><br>
+    <script>
+        var date = new Date()
+        document.write(date)
+
+        //date srings
+        var date = new Date("August 04, 2020");
+        console.log(date);
+
+        //date formats include how you structure your dates for month, day, year or day,month and year, and also year,mont,day
+        var date = new Date("2020 Aug 04")
+        console.log(date)
+        // using the date get method
+        var date = Date.now();
+        console.log(date)
+
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth();
+        var time = date.getTime();
+        var day = date.getDay();
+        console.log(month);
+        console.log(time);
+        console.log(day);
+        console.log(year);
+        </script>
+</body>
+</html>
